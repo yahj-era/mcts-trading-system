@@ -65,11 +65,11 @@ seaborn >= 0.11.0
 #### Option 2: Local Installation
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/mcts-trading-system.git
-cd mcts-trading-system
+!git clone https://github.com/your-username/mcts-trading-system.git
+%cd mcts-trading-system
 
 # Install dependencies
-pip install -r requirements.txt
+!pip install -r requirements.txt
 ```
 
 ## 🚀 Quick Start
@@ -77,7 +77,9 @@ pip install -r requirements.txt
 ### Basic Usage
 
 ```python
-from stock_trading_system import DataCollector, MLPredictor, MCTSTradingAgent, TradingBacktester
+from stock_trading_system import DataCollector, MLPredictor
+from mcts_trading import MCTSTradingAgent
+from backtesting import TradingBacktester
 
 # 1. Collect and prepare data
 collector = DataCollector()
